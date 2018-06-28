@@ -1,11 +1,7 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
-
-# IntelliJ project files
-.idea/*
-*.iml
-out
-gen
-
-
+.idea
+/yaodwwy.github.io/.deploy_git
+/yaodwwy.github.io/node_modules
+/yaodwwy.github.io/public
+/yaodwwy.github.io/themes/landscape
+/yaodwwy.github.io/db.json
+/yaodwwy.github.io/package-lock.json
