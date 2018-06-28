@@ -4,10 +4,17 @@
  
 > NodeJS
 
-
+    
     cd yaodwwy.github.io
-    npm i -g hexo
+
+	#安装
+    npm install hexo-cli -g
+
+	#初始化	
     hexo init
+    
+	#初始依赖
+    npm install hexo --save
     
     #git部署依赖
     npm install hexo-deployer-git --save
@@ -25,5 +32,8 @@
     #清理
     hexo clean
     
+	#启动
+	hexo server
+
     #部署
     hexo d -g

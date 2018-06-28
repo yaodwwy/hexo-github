@@ -1,7 +1,9 @@
 .idea
+/yaodwwy.github.io/.DS_Store
+/yaodwwy.github.io/Thumbs.db
 /yaodwwy.github.io/.deploy_git
-/yaodwwy.github.io/node_modules
-/yaodwwy.github.io/public
-/yaodwwy.github.io/themes/landscape
 /yaodwwy.github.io/db.json
+/yaodwwy.github.io/*.log
+/yaodwwy.github.io/node_modules/
+/yaodwwy.github.io/public/
 /yaodwwy.github.io/package-lock.json
