@@ -1,6 +1,8 @@
 ---
 title: 收藏夹
+comments: false
 ---
+
 <style>
 .bdSug_app {display:none;}
 .bdSug_wpr { border: 1px solid hsla(31, 15%, 50%, .25)!important;border-top: 0;}

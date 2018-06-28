@@ -1,4 +1,8 @@
-
+---
+title: Spring-Cloud-微服务快速填坑小记
+date: 2018-06-28 11:39:00
+tag: Spring Cloud
+---
 
 本文针对 [史上最简单的 SpringCloud 教程 | 终章](https://blog.csdn.net/forezp/article/details/70148833) 进行了版本升级和测试，测试过程中发现作者故意遗留很多问题(或是因版本升级出现)，导致不能直接成功测试的问题进行了修复和填坑。
 
