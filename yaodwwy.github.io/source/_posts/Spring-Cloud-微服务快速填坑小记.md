@@ -1,3 +1,8 @@
+---
+title: Spring-Cloud-微服务快速填坑小记
+date: 2018-06-28 11:39:00
+tag: Spring Cloud
+---
 
 
 本文针对 [史上最简单的 SpringCloud 教程 | 终章](https://blog.csdn.net/forezp/article/details/70148833) 进行了版本升级和测试，测试过程中发现作者故意遗留很多问题(或是因版本升级出现)，导致不能直接成功测试的问题进行了修复和填坑。
@@ -46,7 +51,7 @@
 
 可同时运行的项目列表：
 
-![Running](running.png)
+![Running](http://adbyte.cn/img/running.png)
 
 >第四篇:断路器（Hystrix）
     
@@ -54,7 +59,7 @@
     暂停其中一个发现端  
     访问 http://localhost:8766/?name=adam
 如图：
-![pause](pause.png)
+![pause](http://adbyte.cn/img/pause.png)
 
 >第五篇: 路由网关(zuul)
 
@@ -72,7 +77,7 @@
     启动 ConfigEurekaServer    访问 http://localhost:8889/config-eureka-client-dev.properties
     启动 ConfigEurekaClient    访问 http://localhost:8887/
 在读取配置文件不再写ip地址，而是服务名，这时如果配置服务部署多份，通过负载均衡高可用。
-![配置文件实例](config-instances.png)
+![配置文件实例](http://adbyte.cn/img/config-instances.png)
     
 >第八篇: 消息总线(Spring Cloud Bus)
     
