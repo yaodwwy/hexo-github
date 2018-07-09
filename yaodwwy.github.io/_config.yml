@@ -94,8 +94,21 @@ search: true
 avatar: https://picsum.photos/480/270/?random
 aside-description: 程序开发日志
 links:
-  谷歌: https://www.google.com/
-  知乎: https://www.zhihu.com/
+  程序员DD: http://blog.didispace.com
+  泥瓦匠博客: http://www.bysocket.com
+  Any Video: https://www.ictgu.cn
+  周立博客: http://itmuch.com
+  梁桂钊的博客: http://blog.720ui.com
+  Chenssy: http://cmsblogs.com
+  吕滔博客: http://www.lvtao.net
+  依云博客: https://blog.lilydjwg.me
+  勺子博客: http://jeepxiaozi.github.io
+  皮皮博客: http://www.heartarea.net
+  Vultr优惠码: https://www.vultrclub.com
+  城南往事: http://www.icnws.com
+  熊窝窝: http://www.baiyuxiong.com
+  李阳博客: https://blog.liyang.io
+  SpringForAll社区: http://spring4all.com
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
