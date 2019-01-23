@@ -1,39 +1,13 @@
 ### 环境依赖
 
-> Git Bash
+> Git Bash [下载](https://git-scm.com/downloads)
  
-> NodeJS
+> NodeJS [下载](https://nodejs.org/en/download/)
 
+> Create SSH key 如果未创建
     
-    cd yaodwwy.github.io
-
-	#安装
-    npm install hexo-cli -g
-
-	#初始化	
-    hexo init
+    $ ssh-keygen -t rsa -C yaodwwy@gmail.com
     
-	#初始依赖
-    npm install hexo --save
-    
-    #git部署依赖
-    npm install hexo-deployer-git --save
-    
-    #样式依赖
-    npm install --save hexo-renderer-sass
-    
-    #Create SSH key
-    ssh-keygen -t rsa -C yaodwwy@gmail.com
-    ssh -T git@github.com
-    
-    #Clone with SSH
-    git@github.com:yaodwwy/yaodwwy.github.io.git
-    
-    #清理
-    hexo clean
-    
-	#启动
-	hexo server
-
-    #部署
-    hexo d -g
+>下载hexo.sh文件修改git地址为自己的项目 并在bash下执行 
+ 
+    $ sh hexo.sh
