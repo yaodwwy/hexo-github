@@ -614,6 +614,9 @@ Netstat 命令用于显示各种网络相关信息，如网络连接，路由表
 
 > 设置虚拟内存空间
 
+    ## 宿主机 grep vm.max_map_count /etc/sysctl.conf
+    ## 如果为空 则 echo vm.max_map_count=262144 >>/etc/sysctl.conf
+    ## 临时生效方式:
     sysctl -w vm.max_map_count=262144
 
 > 拉取并启动ELK

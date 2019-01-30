@@ -300,33 +300,10 @@ GET/POST/PUT/DELETE
 
 ### 安装Head插件
 
-Head是elasticsearch的集群管理工具，可以用于数据的浏览和查询。elasticsearch-head是一款开源软件，elasticsearch5.0之后，elasticsearch-head不做为插件放在其plugins目录下了。head被托管在github上面，所以如果我们要使用它，必须先安装git，通过git获取elasticsearch-head。运行elasticsearch-head会用到grunt，而grunt需要npm包管理器，所以nodejs是必须要安装的。
-
-    # 安装nodejs环境
-    wget -P ~ http://cdn.npm.taobao.org/dist/node/v10.14.2/node-v10.14.2-linux-x64.tar.xz
-    # 下载、解压
-    cd ~ && tar -xvf node-v10.14.2-linux-x64.tar.xz 
-    # 删除安装包、改目录名
-    rm -rf node-v10.14.2-linux-x64.tar.xz && mv node-v10.14.2-linux-x64 nodejs
-    # 创建path软连接
-    ln -s ~/nodejs/bin/npm /usr/local/bin/ 
-    ln -s ~/nodejs/bin/node /usr/local/bin/
-    # 使用git拷贝elasticsearch-head到本地并切换到目录
-    git clone git://github.com/mobz/elasticsearch-head.git /usr/local/elasticsearch-head
-    cd /usr/local/elasticsearch-head/
-    # 安装本地依赖
-    npm install
-    # 修改访问权限 Gruntfile.js 允许所有IP可以访问
-    sed -i 's/port: 9100,/port: 9100 ,\nhostname:"*",/' Gruntfile.js
-    # 修改elasticsearch-head默认连接地址 (可选)
-    # vi /usr/local/elasticsearch-head/_site/app.js
-    # 打开9100端口 如果未关闭防火墙 (可选)
-    # firewall-cmd --zone=public --add-port=9100/tcp --permanent
-    # firewall-cmd --reload
-    # 启动 elasticsearch-head
-    npm run start
-
-浏览器输入网址：http://node202:9100/
+Head是elasticsearch的集群管理工具，可以用于数据的浏览和查询。elasticsearch-head是一款开源软件
+直接用谷歌浏览器即可:
+ 
+[Head谷歌插件](https://chrome.google.com/webstore/detail/elasticsearch-head/ffmkiejjmecolpfloofpjologoblkegm)
 
 ### 安装Kibana
 
@@ -346,7 +323,7 @@ Kibana是一个针对Elasticsearch的开源分析及可视化平台，使用Kiba
     unzip -d /opt/elasticsearch/plugins/ik /opt/elasticsearch/plugins/elasticsearch-analysis-ik-6.5.4.zip
     # 重启elasticsearch
 
-> 建议使用Docker安装ELK 然后仅需进入容器环境安装中文分词器。head插件是扩展功能,可以在本地安装更方便!
+> 建议使用Docker安装ES 然后仅需进入容器环境安装中文分词器。head插件是扩展功能,可以在本地安装更方便!
 
 ## 实践操作篇
 

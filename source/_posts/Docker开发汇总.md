@@ -87,3 +87,7 @@ tag: Docker
     cd / && tar -xvf /backup/backup.tar
     # docker/whalesay 是一个很好玩的镜像,可以去pull下来试试
 ```
+
+### 容器部署篇
+
+#### Docker-compose方式部署
