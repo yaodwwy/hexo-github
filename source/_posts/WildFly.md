@@ -4,6 +4,8 @@ date: 2019-01-12 10:15:00
 tag: WildFly
 ---
 
+   本篇针对Linux环境下WildFly常用开发，配置，环境等使用细节及跳坑汇总。
+   
 ### WildFly(JBoss)环境篇
 
 > 下载WildFly并解压

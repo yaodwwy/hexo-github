@@ -4,6 +4,8 @@ date: 2019-01-12 10:15:00
 tag: CentOS
 ---
 
+   本篇针对Linux环境下Tomcat常用开发，配置，环境等使用细节及跳坑汇总。
+   
 ### Tomcat环境篇
 
 > 下载Tomcat并解压
