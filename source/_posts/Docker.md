@@ -6,10 +6,108 @@ tag: Docker
 
 　　本篇针对Docker18.09.0常用开发，配置，环境搭建等使用细节汇总。
 
-### 环境说明
+### Docker环境篇
 
-<a href="http://www.adbyte.cn/2018/12/12/CentOS-7-Minimal%E5%BC%80%E5%8F%91%E6%B1%87%E6%80%BB/#Docker%E7%8E%AF%E5%A2%83%E7%AF%87" target="_blank">Docker环境安装</a>
+> 查看已安装的docker 
+
+    $ rpm -qa | grep docker
     
+> 卸载旧版本(如果存在)
+
+    $ sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-selinux \
+                  docker-engine-selinux \
+                  docker-engine
+
+> Linux 源安装
+
+    yum install -y yum-utils device-mapper-persistent-data lvm2
+    #设置Docker存储库，可以从存储库安装和更新Docker
+    yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+    yum makecache fast
+    # 安装最新版本的Docker CE
+    yum -y install docker-ce
+    # 启动Docker
+    systemctl start docker
+    
+#### Docker Compose:
+
+下载安装文件：
+
+    $ sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-`uname -s`-`uname -m` -o /usr/bin/docker-compose
+
+给已下载的安装文件添加执行权限：
+
+    $ sudo chmod +x /usr/bin/docker-compose
+
+测试是否安装成功：
+
+    $ docker-compose --version
+
+---
+
+### Docker环境篇之Elasticsearch
+
+> 更新为国内Docker镜像（加速）
+
+    sudo mkdir -p /etc/docker
+    sudo tee /etc/docker/daemon.json <<-'EOF'
+    {
+      "registry-mirrors": ["https://registry.docker-cn.com"]
+    }
+    EOF
+    sudo systemctl daemon-reload
+    sudo systemctl restart docker
+
+> 设置虚拟内存空间
+
+    ## 宿主机 grep vm.max_map_count /etc/sysctl.conf
+    ## 如果为空 则 echo vm.max_map_count=262144 >>/etc/sysctl.conf
+    ## 临时生效方式:
+    sysctl -w vm.max_map_count=262144
+
+> 拉取并启动Elasticsearch
+
+    docker run -p 9200:9200 -p 9300:9300 -it \
+    --name elasticsearch elasticsearch
+
+> 停止Elasticsearch运行容器
+
+    docker stop elasticsearch
+
+> 再启动Elasticsearch运行容器
+
+    docker start elasticsearch
+
+#### 从外网SSH进Docker
+
+    docker exec -it elasticsearch bash
+
+> 在容器内安装SSH服务
+    
+    apt install -y openssh-server
+    
+> 配置sshd文件
+    
+    echo 'PermitRootLogin yes' >>/etc/ssh/sshd_config
+    echo 'UsePAM no' >>/etc/ssh/sshd_config
+    
+> 更新密码
+
+    passwd
+    123456
+    123456
+    
+> 重启ssh
+
+    service ssh restart
+        
     # docker version
     Client:
      Version:           18.09.0
