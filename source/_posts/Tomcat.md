@@ -15,8 +15,33 @@ tag: Tomcat
 
 > Tomcat实时查看日志：
 
-    $ tail -fn 1000 /data/tomcat/logs/catalina.out
-    
+```bash
+    tail -Fn 1000 /tomcat/logs/catalina.out
+```
+
+> Tomcat配置环境参数：
+
+   Window: /tomcat/bin/setenv.bat
+```bat
+    set JAVA_OPTS="-Dspring.profiles.active=dev"
+```
+
+   Linux: /tomcat/bin/setenv.sh
+```bash
+    export JAVA_OPTS="$JAVA_OPTS -Dspring.profiles.active=dev"
+```
+
+> Tomcat主机配置范例：
+
+server.xml
+```xml
+      <Host name="test.example.cn" appBase="webapps/example" unpackWARs="true" autoDeploy="true"/>
+```
+/tomcat/conf/test.example.cn/ROOT.xml
+```xml
+    <Context path="" docBase="${catalina.base}/war/example.war" reloadable="true" />
+```
+
 #### Tomcat界面管理员配置
 
 > user.xml(配置管理员用户名密码，用于管理/host-manager和/manager)：
@@ -56,3 +81,19 @@ tag: Tomcat
     $ ./data/tomcat/bin/catalina-jrebel.sh
     
 >Notice: 首次部署会全部同步，缓存清理方式：rm -rf /root/.jrebel/cache/*
+
+#### 问题篇
+
+>Tomcat 警告：consider increasing the maximum size of the cache
+
+解决办法: 修改文件 tomcat/conf/context.xml 
+    
+```xml
+    <Context>
+        <Resources cachingAllowed="true" cacheMaxSize="100000" />
+    </Context>
+```
+
+说明:
+    cachingAllowed：是否允许启用静态资源(HTML、图片、声音等)的缓存。默认值为true。
+    cacheMaxSize：设置静态资源缓存的最大值，单位为K。
