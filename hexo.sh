@@ -18,7 +18,7 @@ ssh -T git@github.com
 read -p "请确认公钥配置正常? 键入 Enter 继续..."
 if [[ $?="0" ]]; then
    #Clone with SSH 先克隆到临时文件夹 再把temp中的所有文件都移动到hexo-coding
-   git clone git@github.com:yaodwwy/yaodwwy.github.io.git ../temp
+   git clone git@github.com:yaodwwy/hexo-github.git ../temp
    read -p "请再次确认公钥配置正常? 键入 Enter 继续..."
    cp -rf ../temp/* ../temp/.git ../temp/.gitignore . && rm -rf ../temp/
 else
