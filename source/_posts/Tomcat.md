@@ -1,7 +1,7 @@
 ---
 title: Tomcat环境搭建与常用配置
 date: 2019-01-12 10:15:00
-tag: CentOS
+tag: Tomcat
 ---
 
    本篇针对Linux环境下Tomcat常用开发，配置，环境等使用细节及跳坑汇总。

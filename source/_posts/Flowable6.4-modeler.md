@@ -1,7 +1,7 @@
 ---
 title: Flowable modeler 汉化
 date: 2018-10-31 09:13:00
-tag: Flowable Activiti
+tag: Flowable
 ---
 基于 Flowable 6.4 版本
 [Flowable 6.4下载](https://github.com/flowable/flowable-engine/releases/download/flowable-6.4.0/flowable-6.4.0.zip)
