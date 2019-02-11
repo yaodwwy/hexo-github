@@ -110,5 +110,5 @@ links:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:yaodwwy/yaodwwy.github.io.git
+  repo: git@z.adbyte.cn:/home/git/blog/hexo.git
   branch: master
