@@ -110,5 +110,5 @@ links:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: root@z.adbyte.cn:/home/git/blog/hexo.git
+  repo: root@z.adbyte.cn:/hexo.git
   branch: master
