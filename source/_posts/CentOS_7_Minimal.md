@@ -125,12 +125,46 @@ tag: CentOS
     who am i 
     # 剔除对方
     pkill -kill -t pts/1
+    
+> 谷歌GCP开启SSH登录
+    
+    # 登录服务器，切换到root用户
+    sudo -i
+    # 修改ssh配置文件
+    vim /etc/ssh/sshd_config
+    # 修改下面两个参数把no改为yes
+    # PermitRootLogin yes
+    # PasswordAuthentication yes
+    # 重启ssh服务使修改生效，
+    # debain命令：
+    /etc/init.d/ssh restart
+    # centos命令：
+    service sshd restart
+    # 给root账户添加密码，
+    passwd
+    
+> SSH登录
+    
+    # 本地生成公钥和密钥
+    ssh-keygen -t rsa
+    # 将本机生成的公钥发送到服务器上（建立信任关系）
+    ssh-copy-id -i .ssh/id_rsa.pub root@server_ip
+    # 测试ssh安全登录
+    ssh -T root@server_ip
 
 ---
 
 ### 用户\组管理篇
     
+> 添加用户
 
+    adduser git
+    
+> 允许用户sudo方式
+
+    # 加入git到sudo用户组
+    nano /etc/sudoers
+    # git     ALL=(ALL:ALL) ALL
 
 ### 磁盘目录管理篇
 
