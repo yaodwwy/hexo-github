@@ -48,4 +48,8 @@ tag: Git
     $ git config --list 
     $ git commit -m 'comments here' //把stage中的修改提交到本地库
     $ git push //把本地库的修改提交到远程库中  
-   
+    
+>Hexo 博客中 出现 LF will be replaced by CRLF
+
+    # git工作区默认为CRLF来作为换行符 禁用自动转换 
+    $ git config --global core.autocrlf false
