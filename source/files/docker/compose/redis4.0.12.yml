@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+
+  redis:
+    image: redis:4.0.12
+    container_name: redis
+    restart: always
+    command: redis-server --requirepass echoshen
+    #command: redis-server /usr/local/etc/redis/redis.conf 如果想自定义配置
+    volumes:
+        #- ./redis.conf:/usr/local/etc/redis/redis.conf 如果想自定义配置
+        - redis-data:/data
+    ports:
+      - "6379:6379"
+
+volumes:
+  redis-data:

@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+
+  tomcat:
+    image: tomcat:9.0.14-jre11
+    container_name: tomcat
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - tomcat-webapps:/usr/local/tomcat/webapps
+      - tomcat-conf:/usr/local/tomcat/conf
+      - tomcat-log:/usr/local/tomcat/logs
+    environment:
+      TZ: Asia/Shanghai
+  
+volumes:
+  tomcat-webapps:
+  tomcat-log:
+  tomcat-conf:

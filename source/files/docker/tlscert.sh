@@ -1,5 +1,5 @@
 #!/bin/bash
-# @author: adam
+# @author: anyesu
 
 # 前言
 # 给脚本添加运行权限
@@ -86,9 +86,9 @@ chmod -f 0400 ca-key.pem server/server-key.pem client/key.pem
 cp -f server/* /etc/docker
 
 echo "******************  后续配置操作提示  ******************"
-echo 'EnvironmentFile=-/etc/default/docker必须在docker.service中'
-echo '$DOCKER_OPTS必须在ExecStart中出现'
-echo '/etc/default/docker'
+echo 'echo EnvironmentFile=-/etc/default/docker >> /usr/lib/systemd/system/docker.service'
+echo '$DOCKER_OPTS >> ExecStart=...'
+echo 'vi /etc/default/docker'
 echo 'DOCKER_OPTS="--selinux-enabled --tlsverify --tlscacert=/etc/docker/ca.pem\'
 echo '--tlscert=/etc/docker/server-cert.pem --tlskey=/etc/docker/server-key.pem \'
 echo '-H=unix:///var/run/docker.sock -H=0.0.0.0:2375"'
