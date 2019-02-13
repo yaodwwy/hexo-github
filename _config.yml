@@ -91,7 +91,7 @@ favicon: /favicon.ico
 ## aside-description
 ## links
 search: true
-avatar: https://picsum.photos/480/270/?random
+avatar: /img/avatar.jpg
 aside-description: 程序开发日志
 links:
   程序员DD: http://blog.didispace.com

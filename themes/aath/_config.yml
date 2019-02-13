@@ -4,8 +4,8 @@ language: en
 
 # main menu navigation
 menu:
-  导航: /new
   首页: /
+  导航: /navi
   关于: /about
   文章: /archives
   标签: /tags

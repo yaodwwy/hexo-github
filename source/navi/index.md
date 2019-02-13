@@ -188,4 +188,4 @@ $('section h1').remove();
     
 })(jQuery, window, document);
 </script>
-<script src='/new/inputPrompt.min.js' type='text/javascript'></script>
+<script src='/navi/inputPrompt.min.js' type='text/javascript'></script>
