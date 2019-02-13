@@ -1,5 +1,5 @@
 ---
-title: Linux Java环境搭建
+title: Linux下Java开发问题
 date: 2019-01-12 10:15:00
 tag: CentOS
 ---
@@ -23,3 +23,13 @@ tag: CentOS
     <<=========================
     $ source /etc/profile
     $ java -version
+    
+>解决因Linux的AWT字体组件缺失而导致的 FontConfiguration.getVersion 异常
+FontConfig
+
+Linux 生产环境下部署项目时出现如下异常：`java.lang.NullPointerException at sun.awt.FontConfiguration.getVersion（FontConfiguration.java 1264）`
+经过一翻折腾，发现是系统组件缺失导致的。解决方法如下：
+
+    # 安装FontConfig组件
+    yum install -y fontconfig
+    fc-cache --force
