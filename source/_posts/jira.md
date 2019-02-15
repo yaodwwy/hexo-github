@@ -16,10 +16,18 @@ tag: jira
     
 ### 加入破解文件
 
+[atlassian-extras-3.1.2.jar](/files/docker/jira/atlassian-extras-3.1.2.jar)
+
     # 进入docker主机下的这个目录,备份此文件，最后把atlassian-extras-3.1.2.jar文件放到lib目录
     /var/lib/docker/volumes/compose_jira-app/_data/atlassian-jira/WEB-INF/lib/atlassian-extras-3.2.jar
     
-### 重新启动
+### 重新启动后即可
 
     # 进入jira容器的bash 启动jira
     sh /opt/atlassian/jira/bin/start-jira.sh
+    
+>如果想自己编译容器可以参考以下Dockerfile和bash脚本(源码)
+
+[Dockerfile](/files/docker/jira/Dockerfile)
+
+[docker-entrypoint.sh](/files/docker/jira/docker-entrypoint.sh)
