@@ -1,5 +1,5 @@
 ---
-title: jira 7.12.3 版本 Docker 部署及破解
+title: jira 7.12.3 版本 Docker 部署
 date: 2019-02-15 13:15:00
 tag: jira
 ---
