@@ -166,6 +166,12 @@ tag: CentOS
     nano /etc/sudoers
     # git     ALL=(ALL:ALL) ALL
 
+### 文档编辑篇
+
+>Sed 删除包含某些字符串的行
+    
+    sed -i '/关键字符/d' 文件名
+
 ### 磁盘目录管理篇
 
 > 查看目录列表
@@ -176,6 +182,10 @@ tag: CentOS
 > 统计文件或目录个数
     
     ls -l | wc -l
+    
+> 以人性化的方式显示文件大小
+    
+    ls -lh
     
 > 查看磁盘使用量
     
