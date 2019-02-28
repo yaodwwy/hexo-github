@@ -55,7 +55,7 @@ $('section h1').remove();
 |[Java样例库]    |[极客学院]    |[亿品元素]      |[1号店]
 |[CodeCademy]   |[IT之家]       |[复旦自考]     |[58同城]
 |[W3school]     |[ITellYou]     |[上海考试院]   |[昵图网]
-|[Qwins]        |[设备列表]     |[iok.la]       |[影视吧]
+|[Qwins]        |[设备列表]     |[host]       |[影视吧]
 |[![Facebook]](https://www.facebook.com/)|[![Github]](https://github.com/yaodwwy)|[![StackOverflow]](https://stackoverflow.com)|[![Wikipedia]](https://wikipedia.org)
 
 
