@@ -86,13 +86,13 @@ $('section h1').remove();
 [站长统计]: http://tool.chinaz.com
 [格式化代码]: http://web.chacuo.net/formathtml
 [文本差异]: http://www.jq22.com/textDifference
-[网盘搜索]: http://www.wangpansou.cn
+[网盘搜索]: http://www.pansoso.com
 [Qwins]: http://www.atuser.com
 [分辨率测试]: http://testsize.com
 [格式化JSON]: http://www.bejson.com
 [微博图片]: http://sinaimg.cx
 [盛天云盘]: http://pan.stnts.com
-[iok.la]: http://yaoo.iok.la:9990
+[host]: http://host.adbyte.cn:9990
 
 [ITellYou]: https://msdn.itellyou.cn
 [昵图网]: http://www.nipic.com
@@ -107,7 +107,7 @@ $('section h1').remove();
 [新浪新闻]: http://news.sina.com.cn
 [影视吧]: http://www.ysba.cc
 [复旦自考]: http://www.cce.fudan.edu.cn
-[上海考试院]: https://www.shmeea.edu.cn
+[上海考试院]: http://www.shmeea.edu.cn
 [洛阳书社]: https://weidian.com/dynamic.html?userid=1170745491&wfr=wx_profile
 
 [淘宝网]: http://www.taobao.com
