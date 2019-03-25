@@ -4,6 +4,7 @@ date: 2018-06-28 13:37:00
 tag: Git
 ---
 
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 ![Git命令速查表](/img/git_command.jpg)
 
