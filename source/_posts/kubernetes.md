@@ -241,7 +241,12 @@ kubectl expose deployment nginx-deployment --type=NodePort
 kubectl get svc
 
 ---
+kubectl config get-contects
+kubectl config use-context tectonic
+kubectl get node
 
+>自动补全
+source <(kubectl completion zsh)
 
 
 
