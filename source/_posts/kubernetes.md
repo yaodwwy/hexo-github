@@ -199,3 +199,50 @@ docker swarm init --help
 docker service ls
 docker service ps demo
 docker service scale demo=5
+
+---
+### 9 
+minikube start
+kubectl config view
+kubectl config get-contexts
+kubectl claster-info
+minikube ssh
+
+kubectl create -f xxx.yml
+kubectl delete -f xxx.yml
+kubectl get pods
+kubectl get pods -o wide
+kubectl exec -it xxx sh
+kubectl describe pods nginx
+kubectl port-forward nginx 8080:80
+
+---
+kubectl get rc
+kubectl get pods
+kubectl delete pods nginx-xxxxx
+kubectl scale rc nginx
+kubectl scale rc nginx --replicas=2
+
+---
+kubectl get deployment
+kubectl get rs
+kubectl get deployment -o wide
+>升级版本
+kubectl set image deployment nginx-deployment nginx=nginx:1.13
+>查看版本历史
+kubectl rollout history deployment nginx-deployment
+>回滚版本
+kubectl rollout undo deployment nginx-deployment
+
+---
+kubectl get node -o wide
+kubectl delete service nginx-deployment
+kubectl expose deployment nginx-deployment --type=NodePort
+kubectl get svc
+
+---
+
+
+
+
+
