@@ -33,6 +33,12 @@ Vagrant是一个基于Ruby的工具，用于创建和部署虚拟化开发环境
 
     $ vagrant box list    # 查看本地box列表
     $ vagrant box add     # 添加box到列表
+    
+    下载直接用
+    wget download-url
+    当你下载完毕以后，使用
+    vagrant box add centos/7 path/to/xx.box
+    
     $ vagrant box remove  # 从box列表移除 
 
 ---
@@ -46,7 +52,7 @@ Docker Machine 是 Docker 官方提供的一个工具，它可以帮助我们在
     config 输出连接的配置信息
     create 创建一个Docker主机
     $ docker-machine create -d hyperv --hyperv-virtual-switch "ExtSwitch" node2
-    
+    $ docker-machine create -d virtualbox test
     env 显示连接到某个主机需要的环境变量
     $ docker-machine env node2  # 查询环境变量可以定义本地指向的服务
     
@@ -203,9 +209,9 @@ docker service scale demo=5
 ---
 ### 9 
 minikube start
-kubectl config view
+kubectl config views
 kubectl config get-contexts
-kubectl claster-info
+kubectl cluster-info
 minikube ssh
 
 kubectl create -f xxx.yml
@@ -248,6 +254,13 @@ kubectl get node
 >自动补全
 source <(kubectl completion zsh)
 
+
+kubectl expose pods nginx-pod
+kubectl get svc
+
+>编辑服务yml
+
+kubectl edit deployment test-api2
 
 
 

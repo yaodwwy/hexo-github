@@ -36,6 +36,17 @@ tag: Docker
     # 启动Docker
     systemctl start docker
     
+    
+#### Docker Machine:
+
+    docker-machine create --driver virtualbox \
+     --engine-registry-mirror=https://kfwkfulq.mirror.aliyuncs.com \
+     --virtualbox-boot2docker-url=./boot2docker.iso docker
+    
+>boot2docker.iso下载地址：
+
+    https://github.com/boot2docker/boot2docker/releases
+
 #### Docker Compose:
 
 下载安装文件：
