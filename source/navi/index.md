@@ -174,7 +174,8 @@ $('section h1').remove();
         if ($("#音乐").html()) {
             $("#音乐").fadeIn("fast")
         } else {
-            $("#音乐").html("<iframe frameborder='no' border='0' marginwidth='0' marginheight='0' width='330' height='110' src='//music.163.com/outchain/player?type=0&amp;id=111422234&amp;auto=1&amp;height=90'></iframe><iframe frameborder='no' border='0' marginwidth='0' marginheight='0' width='330' height='110' src='//music.163.com/outchain/player?type=0&amp;id=163088881&amp;auto=0&amp;height=90'></iframe>");
+            $("#音乐").html("<iframe frameborder='no' border='0' marginwidth='0' marginheight='0' width=330 height=110 src='//music.163.com/outchain/player?type=0&id=2797977427&auto=0&height=90'></iframe>"
+            +"<iframe frameborder='no' border='0' marginwidth='0' marginheight='0' width='330' height='110' src='//music.163.com/outchain/player?type=0&amp;id=163088881&amp;auto=0&amp;height=90'></iframe>");
             $("#音乐").fadeIn("fast")
         }
         e ? e.stopPropagation() : event.cancelBubble = true

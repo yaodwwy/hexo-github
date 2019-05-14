@@ -206,6 +206,22 @@ docker service ls
 docker service ps demo
 docker service scale demo=5
 
+docker run --link 容器名 直接使用容器未暴露的端口
+
+---
+
+### 数据持久化之Data Volume
+---
+docker volume ls
+docker volume prune
+docker volume inspect XXX
+
+
+---
+Docker Compose 三大概念
+services | networks | volumes
+
+
 ---
 ### 9 
 minikube start
