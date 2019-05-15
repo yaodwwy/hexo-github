@@ -9,7 +9,7 @@ comments: false
 .bdSug_wpr table td{font-size: 10px!important;padding-left: 7px!important;}
 
 #万年历 {position:absolute; width: 540px;height: 380px; display:none;z-index:3;overflow:hidden; left:50%;top:50%; margin-left:-270px;margin-top:-188px;border-radius: 6px;border: 4px white solid;box-shadow: 0px 2px 40px grey;}
-#音乐 {background-color:white; position:absolute; width: 340px;height: 288px; display:none;z-index:3;overflow:hidden; left:50%;top:50%;margin-left:-270px;margin-top:-188px; border-radius: 6px;border: 4px white solid;box-shadow: 0px 2px 40px grey;}
+#音乐 {background-color:white; position:absolute; width: 340px;height: 480px; display:none;z-index:3;overflow:hidden; left:50%;top:50%;margin-left:-270px;margin-top:-188px; border-radius: 6px;border: 4px white solid;box-shadow: 0px 2px 40px grey;}
 .背景 { display: none; height: 100%; width: 100%; position: fixed; _position: absolute; top: 0; z-index: 2; opacity: 0.3; filter: alpha(opacity=30); background-color: #000;}
 
 <!--搜索框样式-->
@@ -174,7 +174,7 @@ $('section h1').remove();
         if ($("#音乐").html()) {
             $("#音乐").fadeIn("fast")
         } else {
-            $("#音乐").html("<iframe frameborder='no' border='0' marginwidth='0' marginheight='0' width=330 height=330 src='//music.163.com/outchain/player?type=0&id=2797977427&auto=1&height=430'></iframe>");
+            $("#音乐").html("<iframe frameborder='no' border='0' marginwidth='0' marginheight='0' width=330 height=525 src='//music.163.com/outchain/player?type=0&id=2797977427&auto=1&height=430'></iframe>");
             $("#音乐").fadeIn("fast")
         }
         e ? e.stopPropagation() : event.cancelBubble = true
