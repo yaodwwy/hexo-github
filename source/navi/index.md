@@ -49,13 +49,13 @@ $('section h1').remove();
 | [![Google]](https://www.google.com)|[![Maven]](http://mvnrepository.com)|[有道笔记]|[格式化JSON]|
 |:---------------:|:---------------:|:---------------:|:---------------:|
 |[![YouTube]](https://www.youtube.com)|[格式化代码]|[文本差异]|[在线工具]
-|[LayUI文档]     |[分辨率测试]  |[网盘搜索]      |[Google+]
-|[jQuery]       |[站长统计]     |[洛阳书社]     |[淘宝网]
-|[Bootstrap]    |[博客园]       |[微博图片]     |[京东]
-|[Java样例库]    |[极客学院]    |[亿品元素]      |[1号店]
-|[CodeCademy]   |[IT之家]       |[复旦自考]     |[58同城]
-|[W3school]     |[ITellYou]     |[上海考试院]   |[昵图网]
-|[Qwins]        |[设备列表]     |[host]       |[影视吧]
+|[LayUI文档]     |[分辨率测试]   |[网盘搜索]      |[淘宝网]
+|[jQuery]       |[站长统计]     |[洛阳书社]     |[京东]
+|[Bootstrap]    |[博客园]       |[亿品元素]     |[58同城]
+|[Java样例库]    |[极客学院]     |[复旦自考]      |[昵图网]
+|[CodeCademy]   |[IT之家]       |[上海考试院]   |[影视吧]
+|[W3school]     |[ITellYou]     |[host]       ||
+|[Qwins]        |[设备列表]      |              ||
 |[![Facebook]](https://www.facebook.com/)|[![Github]](https://github.com/yaodwwy)|[![StackOverflow]](https://stackoverflow.com)|[![Wikipedia]](https://wikipedia.org)
 
 
@@ -77,7 +77,7 @@ $('section h1').remove();
 [Bootstrap]: http://v3.bootcss.com/css
 [LayUI文档]: https://www.layui.com/doc/
 [H5+]: http://www.html5plus.org/doc/h5p.html
-[jQuery]: http://hemin.cn/jq
+[jQuery]: /html/jq/cheatsheet.html
 [51cto]: http://www.51cto.com
 [在线工具]: https://tool.lu/tip/
 
@@ -90,14 +90,12 @@ $('section h1').remove();
 [Qwins]: http://www.atuser.com
 [分辨率测试]: http://testsize.com
 [格式化JSON]: http://www.bejson.com
-[微博图片]: http://sinaimg.cx
 [盛天云盘]: http://pan.stnts.com
 [host]: http://host.adbyte.cn:9990
 
 [ITellYou]: https://msdn.itellyou.cn
 [昵图网]: http://www.nipic.com
 [亿品元素]: http://www.epinv.com
-[Google+]: https://plus.google.com
 [电影]: http://www.dy2018.com/html/gndy/dyzz/index.html
 [音乐]: http://www.9ku.com/fm
 [凤凰]: http://www.tvyan.com/tai/fhzxt
