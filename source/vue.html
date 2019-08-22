@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.9/vue.min.js"></script>
+</head>
+<body>
+<div class="bg">
+    hello!<br>
+    {{msg}}<br>
+    {{count}}<br>
+    <button v-on:click="submit()">加数字</button>
+    <br>
+    <button @click="submit()">数字加</button>
+    <a v-bind:href="url1">百度</a><br>
+    <a :href="url2">google</a>
+</div>
+
+<script>
+    new Vue({
+        el: '.bg',
+        data: {
+            msg: 'hello vue!',
+            count: 0,
+            url1: 'http://www.baidu.com',
+            url2: 'http://www.google.com'
+        },
+        methods: {
+            submit: function () {
+                this.count++;
+            }
+        },
+        watch: {},
+        computed: {},
+        mounted: {
+
+            debugger
+        }
+    })
+</script>
+</body>
+</html>
