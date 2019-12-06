@@ -1,6 +1,6 @@
 ---
 title: Jenkins兼容Java9和Java10运行方法
-date: 2018-06-13 09:23:00
+date: 2018-06-13 19:23:00
 tag: Jenkins
 ---
 正常运行Jenkins是 `java -jar jenkins.war` 即可，但是环境要求是JDK8的版本。
