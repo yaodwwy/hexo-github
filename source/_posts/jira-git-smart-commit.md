@@ -42,9 +42,9 @@ tag: jira
     GIT-264 #开始解决 问题注释文本内容
     GIT-1720 #重新打开 #comment 问题已重现，请重新处理！
 
-![jira-workflow](/img/jira-workflow.png)
+![jira-workflow](/img/jira-workflow.png?ver=4)
 
->_Jira用户必须具有问题的权限才能转换问题。图中线上的文字为`转换指令`**_
+> _用户必须有权限才能转换问题。图中线上的文字为**转换指令**_
 
 #### `#assign` 分配用户
 
