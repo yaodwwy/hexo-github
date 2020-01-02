@@ -1,5 +1,5 @@
 ---
-title: RaspBian实践
+title: Raspberry Pi 实践
 date: 2019-12-31 15:50:00
 tags:
 ---
