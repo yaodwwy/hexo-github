@@ -34,3 +34,5 @@ done
 # 2020-01-02 15:44:27       39.0
 # 2020-01-02 15:44:30       40.0
 ```
+
+>参考：https://linuxhint.com/raspberry_pi_temperature_monitor/
