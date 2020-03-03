@@ -49,13 +49,13 @@ $('section h1').remove();
 | [![Google]](https://www.google.com)|[![Maven]](http://mvnrepository.com)|[有道笔记]|[格式化JSON]|
 |:---------------:|:---------------:|:---------------:|:---------------:|
 |[![YouTube]](https://www.youtube.com)|[格式化代码]|[文本差异]|[在线工具]
-|[LayUI文档]     |[分辨率测试]   |[网盘搜索]      |[淘宝网]
-|[jQuery]       |[站长统计]     |[洛阳书社]     |[京东]
-|[Bootstrap]    |[博客园]       |[亿品元素]     |[58同城]
-|[Java样例库]    |[极客学院]     |[复旦自考]      |[昵图网]
-|[CodeCademy]   |[IT之家]       |[上海考试院]   |[影视吧]
+|[LayUI文档]     |[分辨率测试]   |[网盘搜索]      |[昵图网]
+|[jQuery]       |[站长统计]     |[洛阳书社]     |[影视吧]
+|[Bootstrap]    |[博客园]       |[亿品元素]     |[设备列表]
+|[Java样例库]    |[极客学院]     |[复旦自考]      |
+|[CodeCademy]   |[IT之家]       |[上海考试院]   |
 |[W3school]     |[ITellYou]     |[host]       ||
-|[Qwins]        |[设备列表]      |              ||
+|[Qwins]        |      |              ||
 |[![Facebook]](https://www.facebook.com/)|[![Github]](https://github.com/yaodwwy)|[![StackOverflow]](https://stackoverflow.com)|[![Wikipedia]](https://wikipedia.org)
 
 
@@ -109,8 +109,6 @@ $('section h1').remove();
 [洛阳书社]: https://weidian.com/dynamic.html?userid=1170745491&wfr=wx_profile
 
 [淘宝网]: http://www.taobao.com
-[京东]: http://www.jd.com
-[1号店]: http://www.yhd.com
 [58同城]: http://www.58.com
 [赶集网]: http://www.ganji.com
 
