@@ -52,8 +52,8 @@ $('section h1').remove();
 |[LayUI文档]     |[分辨率测试]   |[网盘搜索]      |[昵图网]
 |[jQuery]       |[站长统计]     |[洛阳书社]     |[影视吧]
 |[Bootstrap]    |[博客园]       |[亿品元素]     |[设备列表]
-|[Java样例库]    |[极客学院]     |[复旦自考]      ||
-|[CodeCademy]   |[IT之家]       |[上海考试院]   ||
+|[Java样例库]    |[极客学院]     |[复旦自考]      |[mx-tool]
+|[CodeCademy]   |[IT之家]       |[上海考试院]   |[SSL-Test]
 |[W3school]     |[ITellYou]     |[host]       ||
 |[Qwins]        |      |              ||
 |[![Facebook]](https://www.facebook.com/)|[![Github]](https://github.com/yaodwwy)|[![StackOverflow]](https://stackoverflow.com)|[![Wikipedia]](https://wikipedia.org)
@@ -108,8 +108,8 @@ $('section h1').remove();
 [上海考试院]: http://www.shmeea.edu.cn
 [洛阳书社]: https://weidian.com/dynamic.html?userid=1170745491&wfr=wx_profile
 
-[淘宝网]: http://www.taobao.com
-[58同城]: http://www.58.com
+[mx-tool]: https://mxtoolbox.com/SuperTool.aspx#
+[SSL-Test]: https://www.ssllabs.com/ssltest/analyze.html
 [赶集网]: http://www.ganji.com
 
 
