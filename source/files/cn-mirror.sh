@@ -23,6 +23,8 @@ alpine() {
 debian(){
     cp /etc/apt/sources.list /etc/apt/sources.list_bak
     sed --in-place "s|deb.debian.org|mirrors.aliyun.com|g" "/etc/apt/sources.list"
+    sed --in-place "s|security-cdn.debian.org|mirrors.aliyun.com|g" "/etc/apt/sources.list"
+    sed --in-place "s|security.debian.org|mirrors.aliyun.com|g" "/etc/apt/sources.list"
     cat /etc/apt/sources.list_bak
     echo '  ------------->>  '
     cat /etc/apt/sources.list

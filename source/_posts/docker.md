@@ -200,3 +200,7 @@ tag: Docker
 ### 容器部署篇
 
 #### Docker-compose方式部署
+
+### 已启动的容器如何设置自动启动
+    
+    docker update --restart=always <container>
