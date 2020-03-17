@@ -191,7 +191,7 @@ tag: CentOS
     
     df：列出文件系统的整体磁盘使用量
     df -h 以较易阅读的 GBytes, MBytes, KBytes 等格式自行显示
-    du：检查磁盘空间使用量
+    du：检查空间使用量 -ah --max-depth=1  
 
 ### 防火墙篇
 
