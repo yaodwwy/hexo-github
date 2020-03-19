@@ -92,20 +92,10 @@ favicon: /favicon.ico
 ## links
 search: true
 avatar: /img/avatar.jpg
-aside-description: 程序开发日志
+aside-description: 开发日志
 links:
-  程序员DD: http://blog.didispace.com
-  泥瓦匠博客: http://www.bysocket.com
-  周立博客: http://itmuch.com
-  梁桂钊的博客: http://blog.720ui.com
-  Chenssy: http://cmsblogs.com
-  依云博客: https://blog.lilydjwg.me
-  勺子博客: http://jeepxiaozi.github.io
-  熊窝窝: http://www.baiyuxiong.com
-  屈定: https://mrdear.cn/
-  SpringForAll社区: http://spring4all.com
-  简成: http://www.icnws.com
-  帐前卒: http://chillyc.info/
+  IP地址: https://ip.sb
+  短链接: https://u.nu/
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

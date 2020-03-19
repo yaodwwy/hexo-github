@@ -6,8 +6,5 @@ comments: false
 ---
 
 >本站所有内容仅供个人学习使用！
->欢迎扫红包
-
-![欢迎扫红包](/img/hongbao.jpg)
 
 >yaodwwy@gmail.com
