@@ -33,12 +33,11 @@ src="http://i.tianqi.com/index.php?c=code&id=38&icon=1&num=3"></iframe>
 | [![Google]](https://www.google.com)|[![Maven]](http://mvnrepository.com)|[有道笔记]|[格式化JSON]|
 |:---------------:|:---------------:|:---------------:|:---------------:|
 |[![YouTube]](https://www.youtube.com)|[格式化代码]|[文本差异]|[在线工具]
-|[LayUI文档]     |[分辨率测试]   |      |
-|[jQuery]       |[站长统计]     |[洛阳书社]     |[影视吧]
-|[Bootstrap]    |[博客园]       |[亿品元素]     |[设备列表]
-|[Java样例库]    |[极客学院]     |[复旦自考]      |[mx-tool]
-|[CodeCademy]   |[IT之家]       |[上海考试院]   |[SSL-Test]
-|[W3school]     |[ITellYou]     |[Qwins]    ||
+|[LayUI文档]     |[分辨率测试]   |[洛阳书社]     | [设备列表] 
+|[jQuery]       |[站长统计]     |[亿品元素]     |[mx-tool]
+|[Bootstrap]    |[博客园]       | [复旦自考]     |[Qwins]
+|[Java样例库]    |[极客学院]     | [上海考试院]    |[SSL-Test]
+|[CodeCademy]   |[IT之家]       |[ITellYou]|[W3school]
 |[![Facebook]](https://www.facebook.com/)|[![Github]](https://github.com/yaodwwy)|[![StackOverflow]](https://stackoverflow.com)|[![Wikipedia]](https://wikipedia.org)
 
 
