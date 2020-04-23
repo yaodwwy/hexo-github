@@ -4,14 +4,19 @@ date: 2020-04-10 07:44:23
 tags:
 ---
 
-大家好，我是Adam，本期话题是程序员从初级到高级的必经之路，为大家解读新手晋升的10个阶段。
+大家好，我是Adam 本期话题是程序员从初级到高级的必经之路
+为大家解读新手晋升的10个阶段
 即便你是一个新入门者，也希望对你有帮助。现在就开始吧！
+
+Hello everyone, I am Adam. This topic is the way for programmers from junior to senior engineer
+Lets talk about the 10 stages of career promotion
+if you are a new beginner, I hope to help you. Now follow me!
 
 #### 快捷键
 
-不管你是用哪种IDE，都一定要学会使用快捷键。
-不错 一是为了装逼 给你带来快感
-二是省时间 你是码农 要专业点
+不管你是用哪种IDE，都一定要学会使用快捷键
+不错 一方面为了装逼 给你带来快感
+第二是省时间 你是码农 要专业点
 不要总拿个鼠标戳来戳去
 如果是Linux VIM或是NANO 全键盘操作其实也并没有那么利索
 基本上 "复制粘贴 删除撤回 退出保存"
@@ -19,15 +24,25 @@ tags:
 想再骚一点的操作 可以参考视频下方的pdf文件
 快捷键指南
 
+No matter which IDE you are using, you must learn to use hot keys
+Yes, On the one hand is to pretend to bring you pleasure.
+On the other hand is to save time. You are a coder be professional.
+Don't click the mouse poke around.
+If it is Linux VIM or NANO full of keyboard operation, it is not so neat
+Basically 'copy and paste delete and undo exit and save'
+If you have learnt 'Operation by Line, Find and Replace', you will be better
+For more operations, please refer to the pdf file at the bottom of the video
+Hotkey Guide.
+
 #### 善用工具
 
 俗话说工欲善其事必先利其器
-磨刀不误砍柴工，哪个男人不想有一个属于自己的工具箱
 一把扳手能跟一个工程师一辈子
-软件工程师也是一样，从开发工具IDE到自己制作脚本
+软件工程师也是一样，从开发工具IDE到自己制作工具
 需要大量的时间打磨才能攒出属于自己的工具箱
 新手至少要知道常用的工具类
-在Java开发中
+关于工具类 内容也非常多 以后可以单做一期
+在Java世界中
 Google 的 Guava 核心库
 Apache 的 Commons 组件 
 Spring 的 Utils 框架
@@ -39,6 +54,27 @@ BeanUtils 能快速进行实体拷贝
 同事见你打招呼明天得改改
 哟 好久不见 又写bug呢
 
+As the saying goes, workers must first sharpen their tools to do their best
+A wrench is good for an engineer whole life
+The same is true for software engineers
+From development tool IDE to make your own tool
+It takes a lot of time to save the toolbox
+Novices must at least know the common tool
+There is also a lot of content about tools. 
+Chat later in the future
+In the Java world
+Google's Guava core library
+Apache's Commons component
+Spring's Utils framework
+These tools can save a lot of cumbersome operations
+For example, Guava's collection tool package
+Impressive
+StringUtils Can solve the problem of string operation in the development process
+BeanUtils Can quickly make entity copies
+what? Never heard of it?
+Colleagues need to change another welcome when they say hello tomorrow
+Hi Bro! long time no see! Writing bugs aha?
+
 #### Git
 
 分布式版本控制系统
@@ -49,9 +85,9 @@ BeanUtils 能快速进行实体拷贝
 你需要考虑哪些问题？
 1、篮子是否结实耐用，如果篮子打了，鸡蛋是不是一个都吃不到了？
 2、篮子是否要随身携带，中午吃鸡蛋还是晚上下班吃？
-2、是不是要对鸡蛋编上号码，每天按计划取号食用才能保证鸡蛋不过期？
-3、如果取错鸡蛋的顺序把鸡蛋吃了，能不能重新对鸡蛋编号？
-4、篮子上要不要装一个摄像头以记录我确实取过了鸡蛋？
+3、是不是要对鸡蛋编上号码，每天按计划取号食用才能保证鸡蛋不过期？
+4、如果取错鸡蛋的顺序把鸡蛋吃了，能不能重新对鸡蛋编号？
+5、篮子上要不要装一个摄像头以记录我确实取过了鸡蛋？
 ......
 这些生活中可能不会顾及这么多的问题
 但是在虚拟的计算机网络时代，一切都是数据，
@@ -66,19 +102,48 @@ Git，一个自动备份历史、协同、分布、随处可取、代码管理�
 目的都是管理你的文件（代码）让你在所能想到的异常突发事件中
 保证文件（代码）的可用性、安全性、协同性达到平衡
 
+
+Distributed version control system
+Strictly It's not just a code management software
+It is an idea A file backup idea
+Let's revisit this from the example of protecting eggs
+If you have a basket of eggs
+How do you protect it
+And eat it within the shelf life
+What issues do you need to care?
+1、Is the basket strong and durable? If the basket is being broken What can i do?
+2、Whether to carry the basket? Eat eggs at noon or at work at night?
+3、Do I need to number the eggs? 
+4、If I take the eggs in the wrong order and eat them?
+5、Do I need a camera on the basket?
+......
+May not take into account so many problems in life
+But in the programing world
+Everything is data
+Missing is missing
+Do you remember your earliest camera phone,where are the photos you took？
+Important information must be very careful:
+Automatic multiple backup and Get it anytime, anywhere
+Git, An automatic backup history、Collaboration and distribution、Anywhere、Code management software
+Linus took it from his toolbox
+The network drive you are using now、Baidu Disk Google Disk OneDrive
+Just like Git
+The purpose is to manage your files (code)
+Ensure that the usability, security, and coordination of files (code) are balanced in emergencies.
+
 #### 面向过程
 
 最早编程都是面向过程的 后来感觉过程一长就显的没有层次分类
-那好吧 面向对象概念横空出世
-五年前作为新手的我对这个概念也琢磨了好几天
-后来发现就是教你 怎么把一样地东西放一在块儿
+面向对象概念横空出世
+想当初做为新手的我 对这个概念也琢磨了好几天
+后来发现其实就是教你 怎么把一样地东西放一在块儿
+而达到复用的目的
 这不就是分类整理吗
 再后来 JS从前端走向后台
 闭包 匿名方法 这些概念再次高大上起来
 总结下来其实就是 大部分面向对象
 局部面向过程 能隐藏的就别暴露
-对 没错
-人生苦短 我用闭包
+人生苦短 多用闭包
 
 #### 大胆删除
 
@@ -87,7 +152,7 @@ Git，一个自动备份历史、协同、分布、随处可取、代码管理�
 一定要把你自己注释掉的代码删除
 因为30天后 你自己根本不知道注释它的原因
 只要曾经推过git 就大胆删除过期的代码吧
-我在团队中的代码提交贡献
+我在团队中的代码提交贡献量
 就出现过每增加1行 删除5行的记录
 
 #### 重视逻辑 一切问题都是有原因的
@@ -99,7 +164,7 @@ Git，一个自动备份历史、协同、分布、随处可取、代码管理�
 调试不光是试错 更多地是理清来龙去脉 
 要记住 没有无缘无故的故障
 逻辑清晰的要求不光是对技术领域
-也包含所处理的业务领域
+也包含业务领域
 这件事为什么要这么干 这个业务为什么要这么实现
 一定要在内心 多问一句 为什么
 
@@ -111,9 +176,10 @@ Git，一个自动备份历史、协同、分布、随处可取、代码管理�
 就是从使用别人的工具到自己开发工具的过程
 做程序和做木匠是一样的
 自己打造的工具才符合自己的人体工程学
-对于业务代码实现 一定要想尽办法做到纯粹
+业务代码实现 一定要想尽办法做到纯粹
 一个组件 只解决一个小小的问题
-懒不是让我们少干活 而是把要干的活 精细化
+这里说的懒不是让我们少干活
+而是把要干的活 精细化
 最后做一个代码的指挥者 躺着就把活干完了
 
 #### 整理仪容 重视细节样式
@@ -121,7 +187,7 @@ Git，一个自动备份历史、协同、分布、随处可取、代码管理�
 一分钟教你识别程序员
 格子衬衫牛仔裤 黑框眼镜双肩包
 当然这里不教你怎么捯饬自己
-只是为了表达一下自己有强迫症
+只是为了表达一下强迫症
 能用tab的别用空格！
 左花括号千万别换行！！
 注释一定要与代码对齐！！！
@@ -131,14 +197,14 @@ Git，一个自动备份历史、协同、分布、随处可取、代码管理�
 
 #### 学会大度 坦然面对疾风一样的代码 允许新手犯错
 
-曾经一个人站在疾风一样的git提交记录面前
-曾经默默的打开队友的代码再关上
+曾经一个人站在git提交记录面前
+曾经默默的打开队友的代码 再关上
 曾经优化写法 修正格式 再撤回
 终于 释然了 放弃了 算了不生气
-人都是自由的 就像你管不了别人吃穿口味一样
+人都是自由的 就像你管不了别人吃穿品味一样
 对队友的磨难就是对自己的不公
-新手们 大胆的犯错吧
-有时弯路会让你跑的更快 再次愉快的做好朋友
+大胆的犯错吧
+有时弯路会让你跑的更快 再次愉快的做好朋友的 不吵架
 一定要允许新手犯错 过早优化是万恶之源
 
 #### 组织会议 把握休息时间
@@ -171,6 +237,7 @@ Git，一个自动备份历史、协同、分布、随处可取、代码管理�
 你是问题的解决者 创造者 创新者
 不是编程者 编程只是你在完成创新的工具
 去解决实际的问题吧
+下期见
 
 
 
