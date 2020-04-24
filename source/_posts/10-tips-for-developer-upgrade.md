@@ -12,7 +12,8 @@ Hello everyone, I am Adam. This topic is the way for programmers from junior to 
 Lets talk about the 10 stages of career promotion
 if you are a new beginner, I hope to help you. Now follow me!
 
-#### 快捷键
+##### 快捷键
+> hot key
 
 不管你是用哪种IDE，都一定要学会使用快捷键
 不错 一方面为了装逼 给你带来快感
@@ -34,7 +35,8 @@ If you have learnt 'Operation by Line, Find and Replace', you will be better
 For more operations, please refer to the pdf file at the bottom of the video
 Hotkey Guide.
 
-#### 善用工具
+##### 善用工具
+> Gather tools
 
 俗话说工欲善其事必先利其器
 一把扳手能跟一个工程师一辈子
@@ -75,7 +77,7 @@ what? Never heard of it?
 Colleagues need to change another welcome when they say hello tomorrow
 Hi Bro! long time no see! Writing bugs aha?
 
-#### Git
+##### Git
 
 分布式版本控制系统
 严格意义上说 它不光是一款代码管理软件
@@ -115,7 +117,7 @@ What issues do you need to care?
 2、Whether to carry the basket? Eat eggs at noon or at work at night?
 3、Do I need to number the eggs? 
 4、If I take the eggs in the wrong order and eat them?
-5、Do I need a camera on the basket?
+5、Do I need a camera on the basket to catch the eggs change?
 ......
 May not take into account so many problems in life
 But in the programing world
@@ -131,7 +133,8 @@ Just like Git
 The purpose is to manage your files (code)
 Ensure that the usability, security, and coordination of files (code) are balanced in emergencies.
 
-#### 面向过程
+##### 面向过程
+> Procedural Programming
 
 最早编程都是面向过程的 后来感觉过程一长就显的没有层次分类
 面向对象概念横空出世
@@ -145,7 +148,20 @@ Ensure that the usability, security, and coordination of files (code) are balanc
 局部面向过程 能隐藏的就别暴露
 人生苦短 多用闭包
 
-#### 大胆删除
+The earliest programming was procedural oriented programming
+Later There was no hierarchical classification.
+The Object Oriented Programming concept was popular. 
+I also pondered this concept for several days when I was junior. 
+I found out that was teaching you how to treat it the same way. 
+Put things together
+The purpose is to reuse and classify. 
+Later, JS moved from the front end to the back end. 
+The anonymous method and function closures popular again. 
+However,Thought is object-oriented and behavior is as process-oriented as possible
+Don’t expose what can be hidden. Life is short. Use closures.
+
+##### 大胆删除
+> Boldly delete
 
 自从用了SVN 再也不怕一个人干不完活了
 自从用了Git 再也不要保留注释掉的代码了
@@ -155,7 +171,16 @@ Ensure that the usability, security, and coordination of files (code) are balanc
 我在团队中的代码提交贡献量
 就出现过每增加1行 删除5行的记录
 
-#### 重视逻辑 一切问题都是有原因的
+Since I used SVN, I'm not afraid of jobs was too mach. 
+Since I use Git, I do not keep the garbage code anymore. 
+Be sure to delete the garbage code you commented out 
+Because you don't know the reason for commenting it after 30 days. 
+Once I pushed git, I deleted the deprecated code boldly. 
+My code submission contribution in the team 
+Deleted code were more than added code.
+
+##### 重视逻辑 一切问题都是有原因的
+> Pay attention to logic, all problems have reasons
 
 一名优秀的程序员 
 对技能的要求真不是第一位的
@@ -168,7 +193,20 @@ Ensure that the usability, security, and coordination of files (code) are balanc
 这件事为什么要这么干 这个业务为什么要这么实现
 一定要在内心 多问一句 为什么
 
-#### 封装一切 要学会懒
+As an excellent programmer
+At work the skill requirements are not absolute, Logic.
+10-minute code may take 3 hours to debug. 
+Debugging is not just trial errors. 
+It is more about clarifying the ins and outs. 
+Remember that there are no bugs for no reason. 
+The technology field needs to be logically clear. 
+The business field needs this thing more.
+Why do you want to do this business?
+Why do you want to achieve this business?
+You must ask more in your heart, Why?
+
+##### 封装一切 要学会懒
+> Pack everything and be lazy
 
 还记得前面所说的工具类吧
 工具类就是一次封装的标准示范
@@ -182,7 +220,7 @@ Ensure that the usability, security, and coordination of files (code) are balanc
 而是把要干的活 精细化
 最后做一个代码的指挥者 躺着就把活干完了
 
-#### 整理仪容 重视细节样式
+##### 整理仪容 重视细节样式
 
 一分钟教你识别程序员
 格子衬衫牛仔裤 黑框眼镜双肩包
