@@ -275,7 +275,7 @@ Deleted code were more than added code.
 ##### Pay attention to logic, all problems have reasons
 
 As an excellent programmer
-At work the skill requirements are not absolute, Logic.
+At work the skill requirements are not absolute but Logic.
 10-minute code may take 3 hours to debug. 
 Debugging is not just trial errors. 
 It is more about clarifying the ins and outs. 
@@ -288,71 +288,72 @@ You must ask more in your heart, Why?
 
 ##### Pack everything and be lazy
 
-还记得前面所说的工具类吧
-工具类就是一次封装的标准示范
-程序员从初级到高级
-就是从使用别人的工具到自己开发工具的过程
-做程序和做木匠是一样的
-自己打造的工具才符合自己的人体工程学
-业务代码实现 一定要想尽办法做到纯粹
-一个组件 只解决一个小小的问题
-这里说的懒不是让我们少干活
-而是把要干的活 精细化
-最后做一个代码的指挥者 躺着就把活干完了
+Remember the tool classes mentioned above. 
+The tool classes were standard demonstration model for programmers. 
+From the junior to the senior
+That is the process which from using other people's tools to developing tools. 
+Just like a carpenter.
+You can make the ergonomic tools your own.
+Business code implementation must do everything possible to be pure
+A pure component should solve a small problem.
+The laziness here is not to let us do less work 
+Divide the work finer and finer
+Become a code commander Lie down and finish your work
 
 ##### 整理仪容 重视细节样式
 
-一分钟教你识别程序员
-格子衬衫牛仔裤 黑框眼镜双肩包
-当然这里不教你怎么捯饬自己
-只是为了表达一下强迫症
-能用tab的别用空格！
-左花括号千万别换行！！
-注释一定要与代码对齐！！！
-一段业务处理完了一定要空一行！！！！
-当你感觉自己对这些要求 已追求到发狂的时候
-作为高级程序员 你一定要看接下来的提示
+How to distinguish between programmers. 
+Plaid shirt jeans Black frame glasses backpack. 
+Of course, I won’t teach you how to beautify yourself. 
+Just to express the importance of OCD.
+Tab replaces four spaces! 
+Never wrap the left curly bracket! ! 
+The comments must be aligned with the code! ! ! 
+Be sure to leave a line blank after a period of business processing! ! ! !
+When you agree with me
+As a senior coder, you must read the following tips
 
 #### 学会大度 坦然面对疾风一样的代码 允许新手犯错
 
-曾经一个人站在git提交记录面前
-曾经默默的打开队友的代码 再关上
-曾经优化写法 修正格式 再撤回
-终于 释然了 放弃了 算了不生气
-人都是自由的 就像你管不了别人吃穿品味一样
-对队友的磨难就是对自己的不公
-大胆的犯错吧
-有时弯路会让你跑的更快 再次愉快的做好朋友的 不吵架
-一定要允许新手犯错 过早优化是万恶之源
+Learn to be generous and permit junior's mistakes
+I have also followed the git commit record of teammates
+I have also Silently open the code of the teammate and then close it
+I have also optimized the writing method, revised the format and then rollback
+Finally relieved, give up optimizing others' code
+People have different tastes
+Don't be too demanding on your teammates
+let the junior make bold mistakes
+and be happy with the junior
+Be sure to allow elementary mistakes, premature optimization is the source of all evil
 
 #### 组织会议 把握休息时间
 
-当你处在关键岗位上时
-大大小小的会议是跑不掉了
-早会 晚会 总结会 
-培训会 需求会 技术研讨会
-演示会 对接会 需求沟通会
-刚开始你会感觉这些会议 大量浪费自己的工作时间
-当你慢慢觉悟后会发现
-这是你进入管理岗的开始
-会议能让你深入业务 
-突然认识到自己原来是一个优秀的产品经理
-与此同时 准备一个好看一点的水杯
-最好多装一点水
-毕竟摸键盘时总是忘记喝水
-趁这个机会 多喝点水吧
+When you are in a key position
+there will be a lot of meetings
+morning meeting Evening meeting Summary meeting 
+Training meeting Demand meeting Technical seminar meeting 
+Demonstration meeting Docking meeting Demand communication meeting
+At first you will feel that these meetings waste a lot of your working time
+When you slowly realize it, you will find that this is the beginning 
+of your entry into the management post
+Meetings can get you into business
+Suddenly realized that he was a good product manager
+At the same time, prepare a nice glass
+It's better to put a little more water
+Always forget to drink water when touching the keyboard
+Take this opportunity to drink more water
 
-1665年，牛顿到乡下躲避瘟疫
-自我隔离 不串门 不逛街 
-不参加聚会
-感悟出了人生与科学的大道理
-新冠疫情刚好给了我们这样的机会，
-独处能让我们淡定下来多思考。
-不要只做一个程序员
-做一些重要的东西
-做一些有意义的事情
-做一些能解决问题的事情
-你是问题的解决者 创造者 创新者
-不是编程者 编程只是你在完成创新的工具
-去解决实际的问题吧
-下期见
+In 1665, Newton went to the countryside to avoid the plague
+Self-isolation No out-going  No shopping 
+No party
+He realized the principle of life and science
+The COVID-19 Outbreak just gave us such an opportunity,
+Being alone allows us to calm down and think more.
+Don't just be a programmer
+Do something important
+Do something meaningful
+Do something that solves the problem
+You are the problem solver, creator, innovator
+Not a programmer, programming is just a tool for you to complete innovation
+To solve the actual problem
+See you next time
