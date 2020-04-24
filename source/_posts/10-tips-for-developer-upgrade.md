@@ -357,3 +357,4 @@ You are the problem solver, creator, innovator
 Not a programmer, programming is just a tool for you to complete innovation
 To solve the actual problem
 See you next time
+Copywriting
