@@ -300,7 +300,7 @@ The laziness here is not to let us do less work
 Divide the work finer and finer
 Become a code commander Lie down and finish your work
 
-##### 整理仪容 重视细节样式
+##### Detail
 
 How to distinguish between programmers. 
 Plaid shirt jeans Black frame glasses backpack. 
@@ -313,7 +313,7 @@ Be sure to leave a line blank after a period of business processing! ! ! !
 When you agree with me
 As a senior coder, you must read the following tips
 
-#### 学会大度 坦然面对疾风一样的代码 允许新手犯错
+#### Generous
 
 Learn to be generous and permit junior's mistakes
 I have also followed the git commit record of teammates
@@ -326,7 +326,7 @@ let the junior make bold mistakes
 and be happy with the junior
 Be sure to allow elementary mistakes, premature optimization is the source of all evil
 
-#### 组织会议 把握休息时间
+#### Organize meetings, seize rest time
 
 When you are in a key position
 there will be a lot of meetings
