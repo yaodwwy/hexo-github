@@ -131,7 +131,7 @@ Git，一个自动备份历史、协同、分布、随处可取、代码管理�
 当你感觉自己对这些要求 已追求到发狂的时候
 作为高级程序员 你一定要看接下来的提示
 
-#### 学会大度 坦然面对疾风一样的代码 允许新手犯错
+##### 学会大度 坦然面对疾风一样的代码 允许新手犯错
 
 曾经一个人站在git提交记录面前
 曾经默默的打开队友的代码 再关上
@@ -143,7 +143,7 @@ Git，一个自动备份历史、协同、分布、随处可取、代码管理�
 有时弯路会让你跑的更快 再次愉快的做好朋友的 不吵架
 一定要允许新手犯错 过早优化是万恶之源
 
-#### 组织会议 把握休息时间
+##### 组织会议 把握休息时间
 
 当你处在关键岗位上时
 大大小小的会议是跑不掉了
@@ -313,7 +313,7 @@ Be sure to leave a line blank after a period of business processing! ! ! !
 When you agree with me
 As a senior coder, you must read the following tips
 
-#### Generous
+##### Generous
 
 Learn to be generous and permit junior's mistakes
 I have also followed the git commit record of teammates
@@ -326,7 +326,7 @@ let the junior make bold mistakes
 and be happy with the junior
 Be sure to allow elementary mistakes, premature optimization is the source of all evil
 
-#### Organize meetings, seize rest time
+##### Organize meetings, seize rest time
 
 When you are in a key position
 there will be a lot of meetings
@@ -357,4 +357,4 @@ You are the problem solver, creator, innovator
 Not a programmer, programming is just a tool for you to complete innovation
 To solve the actual problem
 See you next time
-Copywriting
+
