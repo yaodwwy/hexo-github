@@ -17,7 +17,8 @@ tags:
 别深究，先学会。
 有了感性认识才能挖掘理性认识。
 
-开篇说三点
+>开篇说三点
+ 
 一、环境很重要
 特殊情况下会先报备环境，
 包括IDE环境及系统已设置的环境变量，
@@ -52,6 +53,9 @@ README会把版本说清楚，
 
 
 ##### Spring Boot dev & actuator
+
+
+
 ##### Spring Boot JPA
 ##### Spring Boot JDBC template
 ##### Spring Boot JDBC template
