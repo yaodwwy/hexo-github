@@ -63,7 +63,7 @@ Google用foobar.withgoogle.com用来招人，
 参数中 标记验证注解，开启级联验证。
 
 	@Valid (javax 标准注解)
-	@Validated (Spring 扩展注解)
+	@Validated (Spring 扩展了JSR-303规范的注解)
 
 增加方法参数 绑定验证结果接口，
 
