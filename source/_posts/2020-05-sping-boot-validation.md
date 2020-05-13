@@ -1,5 +1,5 @@
 ---
-title: Spring Boot 验证框架
+title: Spring Boot validation 验证框架
 date: 2020-05-12 07:44:23
 tags:
 ---
@@ -10,82 +10,90 @@ tags:
 
 Spring Boot 的验证框架，
 一如既往没有重复造轮子，
-集成的是Bean Validation 和Hibernate Validator 规范，
+集成的是Bean Validation 和 Hibernate Validator 规范，
 Bean Validation 2.0已经集成到 Jakarta EE中，
 也就是以前的 JAVA EE 企业版，
-Bean Validation 2.0 核心思想是，
-一次约束，随处验证，
-有了验证框架 就不用在控制层、服务层、数据层，
-代码中重复验证Bean了，
+Validation核心思想是，一次约束，随处验证，
+有了验证框架 就不用在控制层、服务层和数据层，
+代码中重复验证参数了，
 那我们开始吧。
 
 新建测试项目，
 
 选择你喜欢的JDK版本，
 
-使用Spring Initializr Spring 初始化器，
-如果没有科学上网可以使用国内源，
+使用Spring Initializr 初始化器，
+使用阿里云的服务器会快很多
 https://start.aliyun.com/
 
-选择Developer Tools 中的 Spring Boot DevTools & Lombok，
-选择Web中的Spring Web，
-选择Ops中的 Spring Boot Actuator 
+选择 Developer Tools 中的 Spring Boot DevTools 和 Lombok，
+选择 Web中的 Spring Web，
+选择 Ops中的 Spring Boot Actuator 
 
-选择I/O中的Validation 也是今天的主角。
+选择 I/O中的 Validation 也是今天的主角。
 
 下一步，给项目起名字，
 完成。
 
 等待依赖加载完成，
-可以使用国内源加速。
+（建议使用国内镜像加速）
 
-新建模型类Bar，
+新建模型类，
 添加普通字段，
-使用非空验证，
+加入验证注解，
 
 这里解释一下，
 foobar是计算机程序领域里的术语，
-并无实际用途和参考意义。
-就像我们经常说的张三、李四，
-它们的确切身份并不重要，仅用于演示一个概念。
-这个词最早是麻省理工学院的
-一个黑客学生组织使用在计算机领域，
-Foobar表示的是高低电平，是一种控制开关，
+就像我们说的张三、李四，仅用于演示名称。
+foobar最早在计算机领域使用的是麻省理工学院的黑客组织，
+表示的是高低电平，是一种控制开关，
 后来美国DEC公司把Foobar写到系统手册里就被慢慢传开了，
-Intel也开始把foo写进文档，
-Google用foobar.withgoogle.com 的网站招人，
+Intel也开始把Foo写进文档，
+Google用foobar.withgoogle.com用来招人，
 后来DEC被康柏收购，康柏又被惠普收购，
 说到惠普应该都认识了。
 怎么样，涨知识吧，关注一波吧！
 回到正题。
 
-配置使用的提示语言。
+设置地区为中国，
+验证消息就指定了中文语言配置文件。
 
 	spring.mvc.locale=zh
 
-标记参数类开启级联验证。
+参数中 标记验证注解，开启级联验证。
 
-	@Valid 
+	@Valid (javax 标准注解)
+	@Validated (Spring 扩展注解)
 
-增加参数：绑定验证结果接口，
+增加方法参数 绑定验证结果接口，
+
+    BindingResult results
+    
 处理验证结果。
+
+    if (results.hasErrors()) {
+        // do something
+    }
+        
 开始测试！
+
 全部校验成功！
 
 Bean Validation 2.0默认支持22种约束注解，
-主要包括非空、断言、数值范围、正负范围，
-日期范围和邮件地址、及强大的正则表达式。
+主要包括非空、断言、数值正负范围，
+日期范围、邮件及强大的正则表达式。
 自定义注解也非常简单，
-一个描述验证消息的注解类 + 约束验证器即可，
-更多深入细节可以clone视频下方的。
-demo示例，
-包含自定义注解，
-统一的参数异常处理，
+一个注解类 + 约束验证器即可，
+更多深入细节可以clone视频下方的demo示例，
+包含自定义注解，统一参数异常处理，
 服务层及数据层异常验证方法。
 
 
 >参考链接: https://beanvalidation.org/2.0/spec/
 
+    // 内容来自 ValidationMessages_zh_CN.properties 文件
+    
+    // Java 标准包注解：javax.validation.constraints.*
     @AssertFalse = 只能为false
     @AssertTrue = 只能为true
     @DecimalMax = 必须小于或等于{value}
@@ -109,6 +117,7 @@ demo示例，
     @PositiveOrZero = 必须是正数或零
     @Size = 个数必须在{min}和{max}之间
     
+    // Hibernate 扩展注解：org.hibernate.validator.constraints.*
     @CreditCardNumber = 不合法的信用卡号码
     @Currency = 不合法的货币 (必须是{value}其中之一)
     @EAN = 不合法的{type}条形码
@@ -126,7 +135,6 @@ demo示例，
     @SafeHtml = 可能有不安全的HTML内容
     @ScriptAssert = 执行脚本表达式"{script}"没有返回期望结果
     @URL = 需要是一个合法的URL
-    
     @DurationMax = 必须小于${inclusive == true ? '或等于' : ''}${days == 0 ? '' : days += '天'}${hours == 0 ? '' : hours += '小时'}${minutes == 0 ? '' : minutes += '分钟'}${seconds == 0 ? '' : seconds += '秒'}${millis == 0 ? '' : millis += '毫秒'}${nanos == 0 ? '' : nanos += '纳秒'}
     @DurationMin = 必须大于${inclusive == true ? '或等于' : ''}${days == 0 ? '' : days += '天'}${hours == 0 ? '' : hours += '小时'}${minutes == 0 ? '' : minutes += '分钟'}${seconds == 0 ? '' : seconds += '秒'}${millis == 0 ? '' : millis += '毫秒'}${nanos == 0 ? '' : nanos += '纳秒'}
 
