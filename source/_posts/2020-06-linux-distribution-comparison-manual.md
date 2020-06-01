@@ -115,9 +115,9 @@ yum是一个基于rpm系统的包安装、移除的自动更新器。yum会自�
 |:---------------|:---------------|:---------------|
 |安装	         |    yum install NAME      |   rpm –ivh .rpm
 |更新指定软件      |    yum update NAME      |   rpm –Uvh .rpm
-|列出可更新软件	 |    yum check-update |
+|列出可更新软件	 |    yum check-update ||
 |列出已安装包      |    yum list installed   |   rpm –qa
 |显示包信息	     |    yum info NAME         |   rpm –qi NAME
 |显示包的安装情况	 |    yum list NAME         |   rpm –q
 |删除软件包	     |    yum remove NAME       |   rpm –e NAME
-|清除缓存目录下的软件包	yum clean packages|
+|清除缓存目录下的软件包| yum clean packages |||
