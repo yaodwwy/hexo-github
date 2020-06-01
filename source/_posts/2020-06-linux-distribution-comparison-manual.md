@@ -1,5 +1,5 @@
 ---
-title: linux发行版系统管理及软件包管理手册
+title: Linux发行版系统管理及软件包管理手册
 date: 2020-06-01 10:15:00
 tag: Linux
 ---
