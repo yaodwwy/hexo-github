@@ -33,8 +33,8 @@ tag: Linux
     
     # 更新镜像源为阿里云
     curl -fsSLO https://adbyte.cn/files/cn-mirror.sh
-    chmod +x mirror.sh
-    ./mirror.sh
+    chmod +x cn-mirror.sh
+    bash cn-mirror.sh
     cat /etc/apt/sources.list | grep aliyun
     
     # 下载内核包解压
