@@ -1,9 +1,8 @@
 ---
-
 title: Why does javas hashcode in string use 31 as a multiplier
 date: 2020-04-01 10:06:45
 tags:
------------------------------------------------------------------------------------------------
+---
 
 The value 31 was chosen because it is an odd prime. If it were even and the multiplication overflowed,
 information would be lost, as multiplication by 2 is equivalent to shifting. The advantage of using a
