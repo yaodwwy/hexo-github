@@ -1,0 +1,12 @@
+version: "3.5"
+services:
+  aria2-ui:
+    container_name: aria2-ui
+    restart: unless-stopped
+    image: wahyd4/aria2-ui:latest
+    ports:
+      - 80:80
+    environment:
+      - ENABLE_AUTH=false
+    volumes:
+      - d:/Downloads/aria2:/data

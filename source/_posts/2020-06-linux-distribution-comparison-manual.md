@@ -10,9 +10,9 @@ tag: Linux
 
 Linux发行版的多样性是由于不同用户和厂商的技术、哲学和用途差异。在宽松的自由软件许可证下，任何有足够的知识和兴趣的用户可以自定义现有的发行版，以适应自己的需要。
 
-#### 系统及硬件信息
+### 系统信息
 
-显示系统基本信息
+#### 基本信息
         
     # uname -a  
       [-s 内核名称 -n 网络节点上的主机名 -r 内核发行号 -v 内核版本]
@@ -22,51 +22,54 @@ Linux发行版的多样性是由于不同用户和厂商的技术、哲学和用
     # env                    # 查看环境变量
     # getconf -a             # 系统变量信息
         
-显示及设置主机基本信息
+#### 主机信息
 
     # hostnamectl status                  # 显示当前主机名设置
     # hostnamectl set-hostname NAME       # 设置系统主机名
     
-CPU信息
+#### CPU信息
 
     # lscpu   # cpu的统计信息
     # cat /proc/cpuinfo
 
-内存信息
+#### 内存信息
 
+    # lsmem                             # 仅 Red Hat 可用
+    # cat /proc/meminfo 
     # free -m                           # 显示内存状态
       [-h (-bkm)人性化显示单价 -s -t 包括虚拟内存交换区]
-    # cat /proc/meminfo 
     # swapon                            # 交换区空间
     # dmidecode -t memory
-    # lsmem  # 仅 Red Hat 可用
     
+#### 磁盘信息
 
-磁盘信息
-
-    lsblk
-    fdisk -l
+    # lsblk         # 列出所有可用块设备的信息
+    # fdisk -l      # 查看硬盘及分区信息
     
+#### 网络信息
 
-网络信息
+    # lspci | grep -i 'eth'     # 显示网卡硬件信息
+    # ifconfig -a               # 显示全部接口信息
+    # ip link show              # 查看端口的具体信息
+    # ip addr                   # 查看IP地址
+    # ethtool eth0              # 查看网口参数
 
-    lspci | grep -i 'eth'
-    ifconfig -a
-    ip link show
-    ethtool eth0
+#### 硬件信息
 
-其它硬件信息
+    # lspci -tv                      # 列出所有PCI设备
+    # lsusb -tv                      # 列出所有USB设备
+    # dmidecode                      # 打印所有硬件信息
+    # dmidecode -q                   # 打印所有硬件信息，简洁
+    # dmidecode -t bios              # 查看BIOS相关的硬件信息
+    # dmidecode -t system            # 查看系统相关的硬件信息
+    # dmidecode -t baseboard         # 查看主板相关的硬件信息
+    # dmidecode -t chassis           # 查看机箱相关的硬件信息
+    # dmidecode -t processor         # 查看处理器相关的硬件信息
+    # dmidecode -t memory            # 查看内存相关的硬件信息
 
-    lspci
-    dmidecode -t bios
-    dmidecode -q
+#### 系统服务信息查询
 
-    # lspci -tv              # 列出所有PCI设备
-    # lsusb -tv              # 列出所有USB设备
-    # lsmod                  # 列出加载的内核模块
-
- 查看系统服务信息
-
+    # lsmod                                 # 列出加载的内核模块
     # systemctl list-units --type=service   # 所有已启动的服务
     # chkconfig --list                      # 列出所有系统服务
     # chkconfig --list | grep on            # 列出所有启动的系统服务
@@ -74,7 +77,7 @@ CPU信息
     # [-k 内核日志 -b 本次启动日志 -u NAME.service 按服务筛选 ]
     # [_PID=XXX 按进程筛选 -f 追踪日志 -u NAME.service 按服务筛选 ]
 
- 操作系统服务
+#### 系统服务操作
 
     # systemctl enable XXX.service          # 开机启动
     # systemctl start XXX.service           # 启动nginx服务
@@ -82,9 +85,9 @@ CPU信息
     # systemctl status XXX.service          # 查看服务当前状态
     # systemctl restart XXX.service         # 重新启动服务
 
-#### 系统软件信息
+### 软件信息
     
-不同Linux 发行版软件操作常用指令
+>不同Linux 发行版软件操作常用指令
 
 |系统|Debian/Ubuntu|CentOS|Fedora|
 |:---------------:|:---------------:|:---------------:|:---------------:|
@@ -98,7 +101,7 @@ CPU信息
 |从本地安装包      |dpkg -i .deb   |yum install .rpm    |dnf install .rpm|
 |删除已安装的包    |apt-get remove |yum remove          |dnf erase|
 
-Debian 家族发行版的管理员通常熟悉 apt-get 和 apt-cache
+>Debian 家族发行版的管理员通常熟悉 apt-get 和 apt-cache
 
 |传统命令|等价的 apt 命令|
 |:---------------|:---------------|
@@ -109,7 +112,7 @@ Debian 家族发行版的管理员通常熟悉 apt-get 和 apt-cache
 |apt-get remove package |   apt remove package
 |apt-get purge package  |   apt purge package
 
-yum是一个基于rpm系统的包安装、移除的自动更新器。yum会自动计算并且指出在安装包时需要的依赖，这样就不用像rpm一样，需要手动逐一添加依赖，而是直接帮我们安装这些依赖。
+>yum是一个基于rpm系统的包安装、移除的自动更新器。yum会自动计算并且指出在安装包时需要的依赖，这样就不用像rpm一样，需要手动逐一添加依赖，而是直接帮我们安装这些依赖。
 
 |常用操作|yum命令|rpm命令|
 |:---------------|:---------------|:---------------|
