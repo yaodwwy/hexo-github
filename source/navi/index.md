@@ -7,18 +7,18 @@ comments: false
 #post aside > div > .content span {    padding: 10px;}
 #post aside > div { margin-left: 15px; box-sizing: border-box; background-color: #ffffff; margin-bottom: 15px; 
 box-sizing: border-box; border-radius: 2px;}
-#post aside > div > .content {    color: #909090;    padding: 20px;    font-size: 1em;}
-#post aside .avatar img { display: block; width: 100%; height: 185px; object-fit: cover; object-position: center center;}
-#post aside .search form input {    background: #fff 8px 9px no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);    padding: 7px 11px 7px 28px;    border-radius: 2px;    width: 100%;    box-sizing: border-box;    border: 1px solid rgba(178, 186, 194, 0.3);    outline: none;    font-size: 14px;}
+#post aside > div > .content {    color: #909090;    padding: 20px;    font-size: 0.85em;}
+#post aside .avatar img { display: block; width: 100%; height: 270px; object-fit: cover; object-position: center center;}
+#post aside .search form input {font-size: 0.9em;    background: #fff 8px 9px no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);    padding: 7px 11px 7px 28px;border-radius: 2px;    width: 100%;    box-sizing: border-box;    border: 1px solid rgba(178, 186, 194, 0.3);   outline: none;    }
 
 .markdown-body a {color: #7B7B7B;}
 .markdown-body a:hover {color: #f48024;}
-table{display:table!important;font-size:11px;}
-table th a{height: 45px;font-size:14px;}
+table{display:table!important;font-size:0.85em;}
+table th a{height: 45px;font-size:1.2em;}
+table tr td a:hover{font-size:1em;}
 table img {max-width: 90px!important; max-height: 35px!important; margin-left:4px; }
 table th, table td { padding: 8px 0px!important;}
 table tr td:first-child{ width:90px;}
-table tr td a:hover{font-size:12px;}
 </style>
 
 
@@ -94,8 +94,8 @@ src="http://i.tianqi.com/index.php?c=code&id=38&icon=1&num=3"></iframe>
 (function(){
     
     const aside = "<aside><div class='avatar'>"
-            +"<a target='_blank' href='https://tianqi.2345.com/t/wxyt/wxyt.htm'>"
-            +"<img src='https://tianqi.2345.com/t/wxyt/now.jpg?"+new Date().getTime()+"' alt='avatar'>"
+            +"<a target='_blank' href='https://tianqi.2345.com/t/jiankong/2_l.htm'>"
+            +"<img src='https://tianqi.2345.com/t/jiankong/2_l.jpg?v="+new Date().getTime()+"' alt='avatar'>"
             +"</a>"
             +"<div class='content'>"
             +"<span>　<a class='万年历' target='_blank' href='//www.baidu.com/s?wd=%E6%97%A5%E5%8E%86'>万年历</a></span>"
