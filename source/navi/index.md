@@ -8,9 +8,10 @@ comments: false
 #post aside > div { margin-left: 15px; box-sizing: border-box; background-color: #ffffff; margin-bottom: 15px; 
 box-sizing: border-box; border-radius: 2px;}
 #post aside > div > .content {    color: #909090;    padding: 20px;    font-size: 0.85em;}
-#post aside .avatar img { display: block; width: 100%; height: 270px; object-fit: cover; object-position: center center;}
-#post aside .search form input {font-size: 0.9em;    background: #fff 8px 9px no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);    padding: 7px 11px 7px 28px;border-radius: 2px;    width: 100%;    box-sizing: border-box;    border: 1px solid rgba(178, 186, 194, 0.3);   outline: none;    }
-
+#post aside .search form input {font-size: 0.9em; background: #fff 8px 9px no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);    padding: 7px 11px 7px 28px;border-radius: 2px;    width: 100%;    box-sizing: border-box;    border: 1px solid rgba(178, 186, 194, 0.3);   outline: none;    }
+#气象图 {width: 325px; height: 275px; overflow: hidden; position: relative;}
+#气象图 > img {width: 325px;height: 275px;}
+#气象图 > img:hover {width: 936px; height: 779px;left: -340px; top: -140px; margin-top: -200px; margin-left: -200px; position: absolute;}
 .markdown-body a {color: #7B7B7B;}
 .markdown-body a:hover {color: #f48024;}
 table{display:table!important;font-size:0.85em;}
@@ -94,9 +95,10 @@ src="http://i.tianqi.com/index.php?c=code&id=38&icon=1&num=3"></iframe>
 (function(){
     
     const aside = "<aside><div class='avatar'>"
-            +"<a target='_blank' href='https://tianqi.2345.com/t/jiankong/2_l.htm'>"
-            +"<img src='https://tianqi.2345.com/t/jiankong/2_l.jpg?v="+new Date().getTime()+"' alt='avatar'>"
-            +"</a>"
+            +"<div id='气象图'>"
+            +"<img src='https://tianqi.2345.com/t/jiankong/2_l.jpg?v=" + new Date().getTime()
+            +"' alt='avatar'>"
+            +"</div>"
             +"<div class='content'>"
             +"<span>　<a class='万年历' target='_blank' href='//www.baidu.com/s?wd=%E6%97%A5%E5%8E%86'>万年历</a></span>"
             +"<span><span></span><span>　</span>"
@@ -120,9 +122,7 @@ src="http://i.tianqi.com/index.php?c=code&id=38&icon=1&num=3"></iframe>
             +"</div>"
             +"</div></aside>";
             
-    $('#post').append(aside)
-    .append("<div id='万年历'></div>")
-    .append("<div id='音乐'></div>");
+    $('#post').append(aside);
 
 })(jQuery, window, document);
 </script>
