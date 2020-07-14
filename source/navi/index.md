@@ -102,7 +102,7 @@ src="http://i.tianqi.com/index.php?c=code&id=38&icon=1&num=3"></iframe>
             +"<div class='content'>"
             +"<span>　<a class='万年历' target='_blank' href='//www.baidu.com/s?wd=%E6%97%A5%E5%8E%86'>万年历</a></span>"
             +"<span><span></span><span>　</span>"
-            +"<a class='音乐' target='_blank' href='//music.163.com/outchain/player?type=0&id=2797977427&auto=1&height=430'>随便听听</a></span>"
+            +"<a class='音乐' target='_blank' href='//music.163.com/#/playlist?id=2797977427'>随便听听</a></span>"
             +"</div>"
             +"</div>"
     
