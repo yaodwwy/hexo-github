@@ -1,6 +1,6 @@
 ---
 title: 开发者常用镜像仓库地址
-date: 2020-01-02 10:15:00
+date: 2020-08-31 10:15:00
 tag: Linux
 ---
 
@@ -8,15 +8,9 @@ tag: Linux
 自动更新镜像源为阿里开发者镜像仓库
 
 ##使用方法
-#### Linux更新软件源一键脚本
+#### 参考：
 
-如果你的服务器上安装有 curl 工具，请使用以下命令执行脚本：
-
-    curl -fsSL https://adbyte.cn/files/cn-mirror.sh | sh
-    
-如果你的服务器上安装有 wget 工具，请使用以下命令执行脚本：
-
-    wget -qO- https://adbyte.cn/files/cn-mirror.sh | sh
+>https://developer.aliyun.com/mirror/
 
 
 #### Maven仓库地址配置
