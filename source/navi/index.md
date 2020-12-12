@@ -97,14 +97,13 @@ layui.use('util', function(){
         <a href="http://music.163.com/#/playlist?id=2797977427" class="layui-btn layui-btn-radius layui-btn-primary layui-btn-sm">随便听听</a>
      </form><p></p>
      `;
-    
+    var time = new Date().getTime();
     const aside = `<aside>
         <div class='avatar'>
             <iframe allowtransparency="true" frameborder="0" scrolling="no" width="325px"
             src="https://i.tianqi.com/?c=code&a=getcode&id=21&icon=1"></iframe>
             <div id='气象图'>
-                <img src='https://tianqi.2345.com/t/jiankong/2_l.jpg?v=" + new Date().getTime()
-                ' alt='avatar'>
+                <img src='https://tianqi.2345.com/t/jiankong/2_l.jpg?v=`+time+`' alt='avatar'>
             </div>
         </div>
         </aside>`;
