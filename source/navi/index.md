@@ -3,33 +3,27 @@ title: 收藏夹
 comments: false
 ---
 
+<link href="https://www.layuicdn.com/layui/css/layui.css" rel="stylesheet">
+<script src="https://www.layuicdn.com/layui/layui.js"></script>
+
 <style>
-#post aside > div > .content span {    padding: 10px;}
-#post aside > div { margin-left: 15px; box-sizing: border-box; background-color: #ffffff; margin-bottom: 15px; 
-box-sizing: border-box; border-radius: 2px;}
-#post aside > div > .content {    color: #909090;    padding: 20px;    font-size: 0.85em;}
-#post aside .search form input {font-size: 0.9em; background: #fff 8px 9px no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);    padding: 7px 11px 7px 28px;border-radius: 2px;    width: 100%;    box-sizing: border-box;    border: 1px solid rgba(178, 186, 194, 0.3);   outline: none;    }
+.post-meta,section h1{display:none}
+#post aside > div { margin-left: 15px; box-sizing: border-box; background-color: #ffffff; margin-bottom: 15px; box-sizing: border-box; border-radius: 2px;}
+form{display:flex;}
+form input:first-child {font-size: 0.9em; background: #fff 8px 9px no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);
+padding: 7px 11px 7px 28px;border-radius: 2px; width: 100%; height:31px!important; box-sizing: border-box; border: 1px solid rgba(178, 186, 194, 0.3); outline: none;    }
 #气象图 {width: 325px; height: 275px; overflow: hidden; position: relative;}
 #气象图 > img {width: 325px;height: 275px;}
 #气象图 > img:hover {width: 936px; height: 779px;left: -340px; top: -140px; margin-top: -200px; margin-left: -200px; position: absolute;}
 .markdown-body a {color: #7B7B7B;}
-.markdown-body a:hover {color: #f48024;}
-table{display:table!important;font-size:0.85em;}
-table th a{height: 45px;font-size:1.2em;}
-table tr td a:hover{font-size:1em;}
-table img {max-width: 90px!important; max-height: 35px!important; margin-left:4px; }
-table th, table td { padding: 8px 0px!important;}
-table tr td:first-child{ width:90px;}
+.markdown-body td {margin: 2px; padding: 1px}
+.markdown-body td:hover {border: #009688 solid 2px; margin: 2px}
+.markdown-body table{display:table!important;font-size:0.85em;}
+.markdown-body table th a{height: 45px;font-size:1.2em;}
+.markdown-body table img {max-width: 90px!important; max-height: 35px!important; margin-left:4px; }
+.markdown-body table th, table td { padding: 8px 0px!important;}
+.markdown-body table tr td:first-child{ width:90px;}
 </style>
-
-
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<script>
-$('section h1').remove();
-</script>
-
-<iframe allowtransparency="true" frameborder="0" scrolling="no" width="620" height="85" 
-src="http://i.tianqi.com/index.php?c=code&id=38&icon=1&num=3"></iframe>
 
 | [![Google]](https://www.google.com)|[![Maven]](http://mvnrepository.com)|[有道笔记]|[格式化JSON]|
 |:---------------:|:---------------:|:---------------:|:---------------:|
@@ -92,37 +86,30 @@ src="http://i.tianqi.com/index.php?c=code&id=38&icon=1&num=3"></iframe>
 
 
 <script>
-(function(){
-    
-    const aside = "<aside><div class='avatar'>"
-            +"<div id='气象图'>"
-            +"<img src='https://tianqi.2345.com/t/jiankong/2_l.jpg?v=" + new Date().getTime()
-            +"' alt='avatar'>"
-            +"</div>"
-            +"<div class='content'>"
-            +"<span>　<a class='万年历' target='_blank' href='//www.baidu.com/s?wd=%E6%97%A5%E5%8E%86'>万年历</a></span>"
-            +"<span><span></span><span>　</span>"
-            +"<a class='音乐' target='_blank' href='//music.163.com/#/playlist?id=2797977427'>随便听听</a></span>"
-            +"</div>"
-            +"</div>"
-    
-            +"<div class='search'>"
-            +"<div class='content'>"
-            +"<form action='//www.baidu.com/s' target='_blank' class='search-form'>"
-            +"<input type='text' baiduSug='1' autocomplete='off' name='wd' placeholder='Baidu search'>"
-            +"</form>"
-            +"</div>"
-            +"</div>"
-    
-            +"<div class='search'>"
-            +"<div class='content'>"
-            +"<form id='translateForm' action='//translate.google.cn' target='_blank' class='search-form'>"
-            +"<input type='text' id='q' autocomplete='off' name='q' placeholder='Google translate'>"
-            +"</form>"
-            +"</div>"
-            +"</div></aside>";
-            
-    $('#post').append(aside);
+layui.use('util', function(){
+  var util = layui.util;
 
-})(jQuery, window, document);
+    const search = 
+    `<form action='//www.baidu.com/s' target='_blank' class='search-form'>
+        <input class="layui-input  layui-btn-sm" type='text' baiduSug='1' autocomplete='off' name='wd' placeholder='Baidu search'>
+        <input type="submit" value="百度一下" class="layui-btn layui-btn-normal layui-btn-sm" style="flex:0">
+        <a href="http://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86" class="layui-btn layui-btn-radius layui-btn-primary layui-btn-sm">万年历</a>
+        <a href="http://music.163.com/#/playlist?id=2797977427" class="layui-btn layui-btn-radius layui-btn-primary layui-btn-sm">随便听听</a>
+     </form><p></p>
+     `;
+    
+    const aside = `<aside>
+        <div class='avatar'>
+            <iframe allowtransparency="true" frameborder="0" scrolling="no" width="325px"
+            src="https://i.tianqi.com/?c=code&a=getcode&id=21&icon=1"></iframe>
+            <div id='气象图'>
+                <img src='https://tianqi.2345.com/t/jiankong/2_l.jpg?v=" + new Date().getTime()
+                ' alt='avatar'>
+            </div>
+        </div>
+        </aside>`;
+    layui.$('#post').append(aside);
+    layui.$('table').before(search);
+
+})
 </script>
