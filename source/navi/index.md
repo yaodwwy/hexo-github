@@ -16,8 +16,8 @@ padding: 7px 11px 7px 28px;border-radius: 2px; width: 100%; height:31px!importan
 #气象图 > img {width: 325px;height: 275px;}
 #气象图 > img:hover {width: 936px; height: 779px;left: -340px; top: -140px; margin-top: -200px; margin-left: -200px; position: absolute;}
 .markdown-body a {color: #7B7B7B;}
-.markdown-body td {margin: 2px; padding: 1px}
-.markdown-body td:hover {border: #009688 solid 2px; margin: 2px}
+.markdown-body table td,.markdown-body table th {}
+.markdown-body td:hover,a:hover {color: #20a0ff;}
 .markdown-body table{display:table!important;font-size:0.85em;}
 .markdown-body table th a{height: 45px;font-size:1.2em;}
 .markdown-body table img {max-width: 90px!important; max-height: 35px!important; margin-left:4px; }
