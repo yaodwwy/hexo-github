@@ -115,7 +115,15 @@ tags:
     sudo python linux-dash/app/server/index.py
     
     访问 http://raspberrypi/#/system-status 查看
-    
-    
-    
-  ## 未完待续
+
+
+
+#### 加载USB模块及挂载硬件
+
+    modprobe usb-storage
+    fdisk -l 看看U盘的设备
+    mkdir /mnt/usb
+    mount  /dev/sda*   /mnt/usb
+
+
+## 未完待续
