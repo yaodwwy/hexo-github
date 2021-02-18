@@ -11,12 +11,12 @@ if [ $real_addr == $local_addr ] ; then
 	echo "=========================================="
 	sleep 1s
 fi
-apt-get install -y nginx
-systemctl enable nginx.service
-cat > /etc/nginx-sites-enabled/adbyte.cn.conf <<-EOF
+sudo apt-get install -y nginx
+sudo systemctl enable nginx.service
+sudo cat > /etc/nginx/sites-enabled/host.adbyte.cn.conf <<-EOF
 server {
-    listen       80;
-    server_name  adbyte.cn www.adbyte.cn;
+    listen       8008;
+    server_name  host.adbyte.cn host.adbyte.cn;
     root ~/web/;
     index index.php index.html index.htm;
 }

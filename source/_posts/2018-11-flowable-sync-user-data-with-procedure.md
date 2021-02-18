@@ -53,3 +53,7 @@ public interface IMemberRepository extends JpaRepository<MemberEntity, Integer>{
 三、在业务中新增用户或组时调用同步方法 `syncFlowableIdentify()`
 
 四、再用同样的方式定义修改和删除时对应的数据同步业务。
+
+补充说明：
+Flowable的用户只是一个标识，可以使用业务系统用户的唯一名作为条件查询参数，所以没有强关系。
+以上内容仅作为备用参考，不建议同步用户数据。

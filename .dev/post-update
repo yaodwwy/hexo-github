@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+git --work-tree=/home/git/web --git-dir=/home/git/hexo.git checkout -f
+exec git update-server-info
